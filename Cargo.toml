@@ -1,0 +1,11 @@
+# COPY ALL BELOW INTO A NEW FILE CALLED `nuke-it.toml`
+[package]
+name = "gignet-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libp2p = { version = "0.52", features = ["tcp", "noise"] }
+
+[workspace]
+members = ["."]
